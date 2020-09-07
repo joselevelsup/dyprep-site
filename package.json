@@ -8,8 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/icons": "^4.9.1",
+    "flickity": "^2.2.1",
     "next": "9.5.3",
+    "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-flickity-component": "^3.5.0",
+    "tailwindcss": "^1.8.2"
   }
 }
