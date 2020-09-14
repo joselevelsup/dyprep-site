@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default ({ heroClassName, heroTitle, heroSubtitle, heroPicture, heroBody, flip = false, children, learnMore }) => (
   <div className={`${heroClassName} container mx-auto`}>
-		<div className="pt-5">
+		<div className="heroContainer">
 			<h2 className="text-4xl text-center">
 				{heroTitle}
 			</h2>

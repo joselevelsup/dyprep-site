@@ -6,9 +6,9 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const flickityOpts = {
-    autoPlay: 2000,
-    draggable: false,
+    autoPlay: 3000,
     wrapAround: true,
+		pageDots: false
   }
   return (
     <>
@@ -18,7 +18,13 @@ export default function Home() {
       </Head>
       <div className="pb-5">
 				<Flickity options={flickityOpts} className="carousel">
-					<img src="https://placehold.it/1920x1080"/>
+					<div>
+						<img src="https://placehold.it/1920x1080"/>
+						<div className={styles.imageBanner}>
+							<h3>Hello world</h3>
+							<p>this is a subtitle</p>
+						</div>
+					</div>
 					<img src="https://placehold.it/1920x1080"/>
 					<img src="https://placehold.it/1920x1080"/>
 				</Flickity>
@@ -34,7 +40,7 @@ export default function Home() {
           link: "/scholarship",
           text: "Learn about our process"
         }}
-    >
+			>
 
       </HeroContainer>
 
