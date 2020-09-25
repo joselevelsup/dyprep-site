@@ -1,5 +1,6 @@
 import Link from "next/link";
 import '../styles/globals.css'
+import "react-responsive-modal/styles.css";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
 function MyApp({ Component, pageProps }) {
