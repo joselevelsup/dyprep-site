@@ -1,11 +1,23 @@
 import React from "react";
 import Link from "next/link";
+import Emoji from "./emoji";
 
-export default ({ heroClassName, heroTitle, heroSubtitle, heroPicture, heroBody, flip = false, children, learnMore}) => (
+export default ({ heroClassName, heroTitle, emojis, heroSubtitle, heroPicture, heroBody, flip = false, children, learnMore}) => (
   <div className={`${heroClassName} container mx-auto`}>
 		<div className="heroContainer">
 			<h2 className="text-4xl text-center">
-				{heroTitle}
+				{emojis ? 
+					<>
+						{heroTitle} 
+						<>
+							{emojis.map(e => <><span> </span><Emoji symbol={e} /><span> </span></>)}
+						</>
+					</>
+					:
+					<>
+						{heroTitle}
+					</>
+				}
 			</h2>
 			<h4 className="text-2xl text-center">
 				{heroSubtitle}

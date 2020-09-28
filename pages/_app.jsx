@@ -15,27 +15,32 @@ function MyApp({ Component, pageProps }) {
 						<svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
 					</button>
 				</div>
-				<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-sm">
-					<div className="lg:flex-grow">
+				<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto xl:flex xl:items-center xl:w-auto text-sm">
+					<div className="lg:flex-grow xl:flex-grow">
             <Link href="/scholarship">
-							<a className="block mt-4 text-blue-dark hover:text-blue-light lg:inline-block lg:mt-0 mr-4 uppercase">
+							<a className="block mt-4 text-blue-dark hover:text-blue-light lg:inline-block lg:mt-0 xl:inline-block xl:mt-0 mr-4 uppercase">
 								scholarship
 							</a>
             </Link>
             <Link href="/artistry">
-							<a className="block mt-4 text-blue-dark hover:text-blue-light lg:inline-block lg:mt-0 mr-4 uppercase">
+							<a className="block mt-4 text-blue-dark hover:text-blue-light lg:inline-block lg:mt-0 xl:inline-block xl:mt-0 mr-4 uppercase">
 								artistry
 							</a>
             </Link>
             <Link href="/character">
-							<a className="text block mt-4 text-blue-dark hover:text-blue-light lg:inline-block lg:mt-0 uppercase">
+							<a className="text block mt-4 text-blue-dark hover:text-blue-light lg:inline-block lg:mt-0 xl:inline-block xl:mt-0 uppercase">
 								character
 							</a>
             </Link>
 					</div>
-					<div className="lg:flex-grow-1">
+					<div className="lg:flex-grow-1 xl:flex-grow-1">
+						<Link href="/staff">
+							<a className="text block mt-4 text-blue-dark hover:text-blue-light lg:inline-block lg:mt-0 xl:inline-block xl:mt-0 lg:mr-3 xl:mr-3 uppercase">
+								staff
+							</a>
+						</Link>
 						<Link href="/calendar">
-							<a className="text block mt-4 text-blue-dark hover:text-blue-light lg:inline-block lg:mt-0 uppercase">
+							<a className="text block mt-4 text-blue-dark hover:text-blue-light lg:inline-block lg:mt-0 xl:inline-block xl:mt-0 uppercase">
 								calendar
 							</a>
 						</Link>
