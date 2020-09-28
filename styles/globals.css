@@ -22,3 +22,7 @@ a {
 .heroContainer {
 	padding-top: 10%;
 }
+
+@import "./home.css";
+@import "./staff.css";
+@import "./character.css";

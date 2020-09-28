@@ -1,10 +1,13 @@
+import React, { useState, useEffect } from "react";
 import Head from 'next/head'
 import Flickity from "react-flickity-component";
 import HeroContainer from "../components/hero-container";
 
-import styles from '../styles/Home.module.css'
-
 export default function Home() {
+	const [width, setWidth] = useState(0);
+	useEffect(() => {
+		setWidth(window.innerWidth);
+	});
   const flickityOpts = {
     autoPlay: 3000,
     wrapAround: true,
@@ -16,17 +19,22 @@ export default function Home() {
         <title>DYPrep - Home</title>
 				<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
       </Head>
-      <div className="pb-5">
+			<div className="photoContainer pb-5">
 				<Flickity options={flickityOpts} className="carousel">
-					<div>
-						<img src="https://placehold.it/1920x1080"/>
-						<div className={styles.imageBanner}>
+					<div className="carousel-cell">
+						<img src="https://placehold.it/1920x1080" />
+						<div className="imageBanner">
 							<h3>Hello world</h3>
 							<p>this is a subtitle</p>
 						</div>
 					</div>
-					<img src="https://placehold.it/1920x1080"/>
-					<img src="https://placehold.it/1920x1080"/>
+					<div className="carousel-cell">
+						<img src="https://placehold.it/1920x1080" />
+						<div className="imageBanner">
+							<h3>Hello world</h3>
+							<p>this is a subtitle</p>
+						</div>
+					</div>
 				</Flickity>
       </div>
 
@@ -40,12 +48,10 @@ export default function Home() {
           link: "/scholarship",
           text: "Learn about our process"
         }}
-			>
-
-      </HeroContainer>
+			/>
 
       <HeroContainer
-        flip={true}
+				flip={width >= 415}
         heroClassName="artistry"
         heroPicture="https://placehold.it/500x500"
         heroTitle="Artistry"
@@ -55,9 +61,19 @@ export default function Home() {
           link: "/artistry",
           text: "Learn more about our arts"
         }}
-      >
+      />
 
-      </HeroContainer>
+			<HeroContainer 
+				heroClassName="character"
+				heroPicture="https://placehold.it/500x500"
+				heroTitle="Character"
+				heroSubtitle="The positive attributes that mark a thoughtful, articulate, analytic and purposeful individual"
+				heroBody="DY Prep believes that our youth can be held accountable for engaging their world constructively and making positive contributions. Our character development curriculum will empower students with the skills to discover and develop their best possible selves."
+				learnMore={{
+					link: "/character",
+					text: "Learn more about our Character components"
+				}}
+			/>
 
     </>
   );

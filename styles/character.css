@@ -1,0 +1,21 @@
+.character-container {
+	padding: 3%;
+}
+
+.wordTitle {
+	font-size: 32px;
+	font-weight: bold;
+	color: #FF8C62;
+	padding: 5%;
+	cursor: pointer;
+}
+
+.is-disabled.wordTitle  {
+	cursor: auto!important;
+}
+
+@media screen and (max-width: 414px){
+	.wordTitle {
+		font-size: 24px;
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"words": [
+		{
+			"word": "Responsibility",
+			"definition": "School Definition here"
+		},
+		{
+			"word": "Perserverance",
+			"definition": "School Definition here"
+		},
+		{
+			"word": "Discipline",
+			"definition": "School Definition here"
+		},
+		{
+			"word": "Ambition",
+			"definition": "School Definition here"
+		},
+		{
+			"word": "Respect",
+			"definition": "School Definition here"
+		},
+		{
+			"word": "Empathy",
+			"definition": "School Definition here"
+		}
+	],
+	"traits": [
+		"Advisory",
+		"CASA",
+		"Student Association",
+		"Arts Sharings",
+		"Assemblies",
+		"PASS Room",
+		"Student Clubs",
+		"National Honors Society",
+		"Empathy Circles"
+	]
+}

@@ -1,0 +1,71 @@
+.photoContainer {
+	min-height: 600px;
+	height: 100%;
+}
+
+.carousel-cell {
+	width: 100%;
+}
+
+
+.imageBanner {
+	background-color: #162869;
+	color: #FF8C62; 
+	border-radius: 10px;
+	position: absolute;
+	opacity: 0.8;
+	bottom: 13%;
+	left: 6%;
+	padding: 2% 5%;
+	z-index: 1;
+}
+
+.imageBanner > h3 {
+	font-size: 36px;
+}
+
+.imageBanner > p {
+	opacity: 1;
+	font-size: 24px;
+}
+
+.info {
+	max-width: 500px;
+}
+
+@media screen and (max-width: 1920px){
+	.imageBanner {
+		bottom: 23%;
+	}
+}
+
+@media screen and (max-width: 1366px){
+	.photoContainer{
+		min-height: 600px;
+	}
+	.imageBanner {
+		bottom: 13%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.photoContainer {
+		min-height: auto;
+	}
+}
+
+@media screen and (max-width: 414px){
+	.carousel-cell {
+		height: 300px;
+	}
+
+	.photoContainer {
+		min-height: 300px;
+	}
+	.imageBanner > h3{
+		font-size: 24px
+	}
+	.imageBanner > p {
+		font-size: 18px;
+	}
+}
