@@ -76,8 +76,8 @@ export default function artistry(){
 				/>
 				<h3 className="text-2xl text-center">All of our Scholars will take classes in the following areas...</h3>
 				<h5 className="text-xl text-center">One picture is worth a thousand words...</h5>
-				<div className="grid grid-cols-2 gap-2 mb-16">
-					<div className="gallery">
+				<div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-2 mb-16">
+					<div className="gallery sm:mb-8">
 						<h4 className="text-2xl text-center underline">Visual Arts:</h4>
 						<Flickity className="carousel">
 							<div onClick={() => toggleFirstGallery(1)} className="carousel-cell flex justify-center">
@@ -118,10 +118,10 @@ export default function artistry(){
 						</Flickity>
 					</div>
 				</div>
-				<div className="grid grid-cols-2 gap-1 mb-16">
+				<div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-1 mb-16">
 					<div className="gallery">
 						<h4 className="text-2xl text-center underline">Dance:</h4>
-						<div className="grid grid-cols-2 gap-1 p-2">
+						<div className="grid grid-cols-2 sm:gap-2 lg:gap-1 p-2">
 							<div>
 								<img src="https://placehold.it/500x500" />
 							</div>
@@ -138,7 +138,7 @@ export default function artistry(){
 					</div>
 					<div className="gallery">
 						<h4 className="text-2xl text-center underline">Student Performance: </h4>
-						<div className="grid grid-cols-2 gap-1 p-2">
+						<div className="grid grid-cols-2 sm:gap-2 lg:gap-1 p-2">
 							<div>
 								<img src="https://placehold.it/500x500" />
 							</div>
@@ -156,7 +156,7 @@ export default function artistry(){
 				</div>
 				<div className="gallery">
 					<h4 className="text-2xl text-center underline">Music and Theater </h4>
-					<div className="grid grid-cols-4 gap-3">
+					<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
 						<div>
 							<img src="https://placehold.it/500x500" />
 						</div>

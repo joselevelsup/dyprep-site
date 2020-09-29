@@ -11,7 +11,7 @@ export default function scholarship(){
 				<h2 className="text-3xl text-center">
 					All of our Scholars <Emoji symbol="📖" /> will take classes in the following areas:
 				</h2>
-				<div className="grid grid-cols-2 gap-1 mt-3">
+				<div className="grid sm:grid-cols-1 md:grid-cols-2 gap-1 mt-3">
 					<div className="core-subjects mx-auto">
 						<h3 className="text-2xl text-center"> Sciences, Technology, Mathematics</h3>
 						<div className="grid grid-cols-3 gaps-1">
@@ -51,10 +51,10 @@ export default function scholarship(){
 						</ul>
 					</div>
 				</div>
-				<div className="mt-3 w-2/3">
+				<div className="mt-3 sm:w-full md:w-2/3 lg:w-2/3">
 					<div>
 						<h3 className="text-2xl text-center">Humanities in the Arts</h3>
-						<div className="grid grid-cols-3 gap-3">
+						<div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 sm:gap-1 md:gap-2 lg:gap-3">
 							<div>
 								<p className="text-xl underline">English Language Arts</p>
 								<ul>
