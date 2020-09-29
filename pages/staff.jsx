@@ -29,7 +29,7 @@ export default function Staff(){
 					{
 						chunked.map(a => (
 							<>
-								<div className="grid grid-cols-5 gap-2">
+								<div className="grid sm:grid-cols-2 sm:gap-1 md:grid-cols-3 md:gap-2 lg:grid-cols-5 lg:gap-2">
 									{
 										a.map(staff => (
 											<div style={{ backgroundImage: "url(https://placehold.it/300x250)" }} onMouseEnter={() => setStaffId(staff.id)} onClick={() => toggleStaffModal(staff)} className="singleStaffMember" onMouseLeave={() => setStaffId(null)}>
