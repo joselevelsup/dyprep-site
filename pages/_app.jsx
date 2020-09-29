@@ -6,9 +6,9 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 function MyApp({ Component, pageProps }) {
   return (
 		<>
-			<nav className="flex items-center justify-between flex-wrap p-6 bg-orange">
+			<nav className="flex items-center justify-between flex-wrap p-3 bg-orange">
 				<div className="flex items-center flex-shrink-0 text-white mr-6">
-					<span className="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+					<img className="h-16" src="/dyp-logo.png" />
 				</div>
 				<div className="block xl:hidden lg:hidden">
 					<button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
